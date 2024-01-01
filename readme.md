@@ -24,7 +24,7 @@
 
 `https://getbootstrap.com/docs/5.2/examples/`
 
-[ ] html5 sementic tag
-[ ] minimal css reset rule
+[-] html5 sementic tag <br>
+[-] minimal css reset rule
 
 <!-- [x] basic flex layout for main page -->
