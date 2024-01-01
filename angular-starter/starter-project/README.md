@@ -4,10 +4,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # Nodejs v16.17.1 with prime https://www.primefaces.org/primeng-v16-lts/installation
 
-- [x]`npm install primeng` <br>
-- [x]`npm install primeflex` <br>
-- [x]`npm install primeicons` <br>
-- [x]`npm install quill` <br>
+- [x] `npm install primeng` <br>
+- [x] `npm install primeflex` <br>
+- [x] `npm install primeicons` <br>
+- [x] `npm install quill` <br>
 
 ##### quill for editor
 
