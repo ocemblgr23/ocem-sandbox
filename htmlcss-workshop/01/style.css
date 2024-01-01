@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  --font-family: 'Poppins', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: var(--font-family);
+  /* font-size: 100%; */
+  line-height: 1.6;
+  text-rendering: optimizeSpeed;
+}
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
