@@ -1,0 +1,57 @@
+/* You can add global styles to this file, and also import other style files */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: var(--color-scheme);
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-family);
+  font-size: var(--fs-300);
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+}
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a {
+  text-decoration: none;
+}
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: min(85%, 100% - 2rem);
+  margin-inline: auto;
+}
