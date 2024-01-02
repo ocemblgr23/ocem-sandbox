@@ -27,4 +27,10 @@
 - [ ] html5 sementic tag <br>
 - [ ] minimal css reset rule
 
+- [ ] setup prime react
+
+- [x] `npm install primereact` <br>
+- [x] `npm i primeflex` <br>
+- [x] `npm install primeicons` <br>
+
 <!-- [x] basic flex layout for main page -->
