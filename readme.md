@@ -27,7 +27,8 @@
 - [ ] html5 sementic tag <br>
 - [ ] minimal css reset rule
 
-- [ ] setup prime react
+- [x] setup prime react
+- [ ] setup prime import as single file
 
 - [x] `npm install primereact` <br>
 - [x] `npm i primeflex` <br>
