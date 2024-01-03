@@ -10,6 +10,8 @@ import { IProduct } from './models/product.model';
 export class AppComponent implements OnInit {
   title = 'ecom-platform';
 
+  inputTitle = '';
+
   productItems: IProduct[] = [];
 
   constructor(private product_s: ProductService) {}

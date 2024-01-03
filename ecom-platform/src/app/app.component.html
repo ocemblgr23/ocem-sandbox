@@ -1,10 +1,23 @@
-<header class="flex align-items-center justify-content-between">
+<header class="flex py-2 align-items-center justify-content-between">
   <div class="logo p-4">
     <img
       src="https://primefaces.org/cdn/primeng/images/primeng-logo-dark.svg"
       alt="logo"
       srcset=""
     />
+  </div>
+  <div class="input__search">
+    <div class="card flex align-items-center justify-content-center">
+      <span class="p-float-label w-full">
+        <input
+          pInputText
+          class="w-full"
+          id="inputTitle"
+          [(ngModel)]="inputTitle"
+        />
+        <label htmlFor="inputTitle">Search in OCEM Store</label>
+      </span>
+    </div>
   </div>
   <nav>
     <ul class="flex gap-4 p-4">

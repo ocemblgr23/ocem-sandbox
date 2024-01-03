@@ -3,3 +3,7 @@
   grid-template-columns: repeat(auto-fit, minmax(min(360px, 80%), 1fr));
   grid-gap: 1rem;
 }
+
+.input__search {
+  width: min(560px, 100%);
+}
