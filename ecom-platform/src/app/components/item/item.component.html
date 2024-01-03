@@ -1,23 +1,21 @@
-<p-card header="Advanced Card" subheader="Card Subheader">
+<p-card [header]="item.title" [subheader]="item.category">
   <ng-template pTemplate="header">
     <div class="product__img">
       <img alt="Card" [src]="item.image" />
     </div>
   </ng-template>
   <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed
-    consequuntur error repudiandae numquam deserunt quisquam repellat libero
-    asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate
-    neque quas!
+    {{ item.description }}
   </p>
   <ng-template pTemplate="footer">
-    <p-button label="Save" icon="pi pi-check"></p-button>
-    <p-button
-      label="Cancel"
-      icon="pi pi-times"
-      styleClass="p-button-secondary"
-      [style]="{ 'margin-left': '.5em' }"
-    ></p-button>
+    <div class="flex gap-4 align-items-center justify-content-center py-4">
+      <p-button label="Save" icon="pi pi-check"></p-button>
+      <p-button
+        label="Cancel"
+        icon="pi pi-times"
+        styleClass="p-button-secondary"
+      ></p-button>
+    </div>
   </ng-template>
 </p-card>
 
