@@ -15,7 +15,7 @@
         icon="pi pi-cart-plus"
         styleClass="p-button-secondary"
       ></p-button>
-      <div class="p-inputgroup">
+      <div class="p-inputgroup flex gap-2">
         <button
           type="button"
           (click)="increase()"
@@ -25,6 +25,7 @@
         ></button>
         <input
           type="text"
+          class="w-full"
           [(ngModel)]="defaultQuantity"
           pInputText
           ngModel
