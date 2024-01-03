@@ -1,8 +1,24 @@
-<div
-  class="card flex flex-column align-items-center justify-content-center py-4"
->
-  <h1>Angular Work Shop</h1>
-  <p-button label="Check" icon="pi pi-check"></p-button>
-</div>
+<header class="flex align-items-center justify-content-between">
+  <div class="logo p-4">
+    <img
+      src="https://primefaces.org/cdn/primeng/images/primeng-logo-dark.svg"
+      alt="logo"
+      srcset=""
+    />
+  </div>
+  <nav>
+    <ul class="flex gap-4 p-4">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html">About</a></li>
+      <li><a href="index.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-<h1 class="text-xl text-center">Hello World App : OCEM Sandbox</h1>
+<div class="container">
+  <div class="card">
+    <div class="product__cards">
+      <app-item *ngFor="let item of productItems" product="item"></app-item>
+    </div>
+  </div>
+</div>
