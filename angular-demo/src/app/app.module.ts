@@ -4,6 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PrimeconfigModule } from './primeconfig/primeconfig.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent],
@@ -11,6 +12,8 @@ import { PrimeconfigModule } from './primeconfig/primeconfig.module';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
     PrimeconfigModule,
   ],
   providers: [],
