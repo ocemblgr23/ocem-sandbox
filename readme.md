@@ -35,3 +35,9 @@
 - [x] `npm install primeicons` <br>
 
 <!-- [x] basic flex layout for main page -->
+
+##### How to create a responsive grid layout with under 10 lines of CSS.
+
+`https://www.linkedin.com/pulse/how-create-responsive-grid-layout-under-10-lines-css-ross-baker/` <br>
+
+`https://getflywheel.com/layout/flexbox-create-modern-card-design-layout/` <br>
