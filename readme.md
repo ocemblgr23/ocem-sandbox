@@ -43,3 +43,7 @@
 `https://getflywheel.com/layout/flexbox-create-modern-card-design-layout/` <br>
 
 `https://www.youtube.com/watch?v=VsNAuGkCpQU` <br>
+
+##### Solutions to common struggles @Kevin Powell
+
+`https://www.youtube.com/watch?v=U9VF-4euyRo&list=PL4-IK0AVhVjMbyomzxwNOECQwioJLxX6n`
