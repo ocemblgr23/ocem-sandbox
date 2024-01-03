@@ -9,7 +9,21 @@ import { IProduct } from 'src/app/models/product.model';
 export class ItemComponent implements OnInit {
   @Input('product') item!: IProduct;
 
+  defaultQuantity = 1;
+
   ngOnInit(): void {
     console.log(this.item);
+  }
+
+  increase() {
+    this.defaultQuantity += 1;
+  }
+
+  decrease() {
+    if (this.defaultQuantity == 1) {
+      alert("Can't decrease");
+      return;
+    }
+    this.defaultQuantity -= 1;
   }
 }

@@ -9,12 +9,35 @@
   </p>
   <ng-template pTemplate="footer">
     <div class="flex gap-4 align-items-center justify-content-center py-4">
-      <p-button label="Save" icon="pi pi-check"></p-button>
+      <!-- <p-button label="Save" icon="pi pi-check"></p-button> -->
       <p-button
-        label="Cancel"
-        icon="pi pi-times"
+        label="Buy"
+        icon="pi pi-cart-plus"
         styleClass="p-button-secondary"
       ></p-button>
+      <div class="p-inputgroup">
+        <button
+          type="button"
+          (click)="increase()"
+          pButton
+          icon="pi pi-plus"
+          styleClass="p-button-success"
+        ></button>
+        <input
+          type="text"
+          [(ngModel)]="defaultQuantity"
+          pInputText
+          ngModel
+          placeholder="Vote"
+        />
+        <button
+          type="button"
+          pButton
+          (click)="decrease()"
+          icon="pi pi-minus"
+          styleClass="p-button-danger"
+        ></button>
+      </div>
     </div>
   </ng-template>
 </p-card>
