@@ -1,0 +1,10 @@
+.product__img {
+  display: flex;
+  justify-content: center;
+}
+
+.product__img > img {
+  max-width: 50%;
+  object-fit: contain;
+  aspect-ratio: 2/3;
+}

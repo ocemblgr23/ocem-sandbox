@@ -41,3 +41,5 @@
 `https://www.linkedin.com/pulse/how-create-responsive-grid-layout-under-10-lines-css-ross-baker/` <br>
 
 `https://getflywheel.com/layout/flexbox-create-modern-card-design-layout/` <br>
+
+`https://www.youtube.com/watch?v=VsNAuGkCpQU` <br>
