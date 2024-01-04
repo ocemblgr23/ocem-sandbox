@@ -47,3 +47,8 @@
 ##### Solutions to common struggles @Kevin Powell
 
 `https://www.youtube.com/watch?v=U9VF-4euyRo&list=PL4-IK0AVhVjMbyomzxwNOECQwioJLxX6n`
+
+
+##### Wave background generator online
+
+`https://getwaves.io/`<br>
