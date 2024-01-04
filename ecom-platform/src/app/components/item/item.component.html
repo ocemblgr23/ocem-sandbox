@@ -15,17 +15,19 @@
         icon="pi pi-cart-plus"
         styleClass="p-button-secondary"
       ></p-button>
+      <p-button label="Cart" icon="pi pi-check"></p-button>
       <div class="p-inputgroup flex gap-2">
         <button
           type="button"
           (click)="increase()"
           pButton
           icon="pi pi-plus"
-          styleClass="p-button-success"
+          pRipple
+          class="p-button-success border-round"
         ></button>
         <input
           type="text"
-          class="w-full"
+          class="w-full border-round"
           [(ngModel)]="defaultQuantity"
           pInputText
           ngModel
@@ -36,8 +38,9 @@
           pButton
           (click)="decrease()"
           icon="pi pi-minus"
-          styleClass="p-button-danger"
+          class="p-button-danger border-round"
         ></button>
+        <!-- styleClass="p-button-success" -->
       </div>
     </div>
   </ng-template>

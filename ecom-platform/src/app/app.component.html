@@ -7,7 +7,7 @@
     />
   </div>
   <div class="input__search">
-    <div class="card flex align-items-center justify-content-center">
+    <div class="card flex gap-2 align-items-center justify-content-center">
       <span class="p-float-label w-full">
         <input
           pInputText
@@ -17,6 +17,18 @@
           [(ngModel)]="inputTitle"
         />
         <label htmlFor="inputTitle">Search in OCEM Store</label>
+      </span>
+      <span class="p-float-label">
+        <button
+          type="button"
+          label="Search"
+          (click)="onEnter()"
+          iconPos="right"
+          pButton
+          icon="pi pi-search"
+          pRipple
+          class="p-button-success border-round"
+        ></button>
       </span>
     </div>
   </div>
@@ -31,7 +43,26 @@
 
 <section>
   <div class="container py-2">
-    <h1>Search product : {{ inputTitle }}</h1>
+    <div class="card p-4 flex justify-content-between">
+      <h1>Search product : {{ inputTitle }}</h1>
+      <img
+        height="100"
+        class="border-round"
+        width="100"
+        src="{{ (randomPic$ | async)?.message }}"
+        alt=""
+        srcset=""
+      />
+      <button
+        type="button"
+        (click)="updateCart()"
+        pButton
+        icon="pi pi-plus"
+        pRipple
+        class="p-button-success border-round"
+      ></button>
+      <h1>Cart : {{ cartItem$ | async }}</h1>
+    </div>
   </div>
 </section>
 
