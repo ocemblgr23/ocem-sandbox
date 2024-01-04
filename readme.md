@@ -52,3 +52,13 @@
 ##### Wave background generator online
 
 `https://getwaves.io/`<br>
+
+##### website-color-schemes
+
+`https://www.hostinger.in/tutorials/website-color-schemes` <br>
+
+```css
+
+
+
+```
