@@ -48,7 +48,6 @@
 
 `https://www.youtube.com/watch?v=U9VF-4euyRo&list=PL4-IK0AVhVjMbyomzxwNOECQwioJLxX6n`
 
-
 ##### Wave background generator online
 
 `https://getwaves.io/`<br>
@@ -57,8 +56,7 @@
 
 `https://www.hostinger.in/tutorials/website-color-schemes` <br>
 
-```css
+##### basic css for devlopers
 
-
-
-```
+- [ ] File Structure
+- [ ] Padding,Margin,Background-Color, Text-Color
