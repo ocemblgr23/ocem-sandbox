@@ -1,0 +1,89 @@
+/* The CSS code `*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}` is a CSS selector that applies the `box-sizing: border-box;` property to all elements, as well as
+their `::after` and `::before` pseudo-elements. */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+* {
+  margin: 0;
+  padding: 0;
+  /* font: inherit; */
+}
+
+/* dark mode user-agent-styles */
+/* improves punctuation in supported browsers */
+html {
+  color-scheme: light;
+  hanging-punctuation: first last;
+  scroll-behavior: smooth;
+}
+
+/* min body height */
+body {
+  min-height: 100svh;
+  padding: 4rem;
+}
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+/* Improved heading in supported browsers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/* improve readability with max-width on paragraphs and lists */
+/* prevent orphans in supported browsers */
+p,
+li {
+  max-width: var(--p-max-width, 65ch);
+  text-wrap: pretty;
+}
+
+a {
+  text-decoration: none;
+}
+
+.image__gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 50rem;
+  margin-inline: auto;
+
+  gap: 1rem;
+}
+
+.image__gallery > img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+
+  /* remove white background image */
+  mix-blend-mode: color-burn;
+
+  transition: scale 350ms ease, opacity 350ms linear;
+}
+
+.image__gallery:has(img:hover) img:not(:hover) {
+  scale: 0.8;
+  opacity: 0.7;
+}
