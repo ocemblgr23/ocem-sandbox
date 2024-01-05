@@ -33,10 +33,20 @@
     </div>
   </div>
   <nav>
-    <ul class="flex gap-4 p-4">
+    <ul class="flex align-items-center gap-4 p-4">
       <li><a href="index.html">Home</a></li>
       <li><a href="index.html">Laptop</a></li>
       <li><a href="index.html">Printer</a></li>
+      <li>
+        <button
+          type="button"
+          (click)="payNow()"
+          label="Pay Now"
+          pButton
+          pRipple
+          class="p-button-success border-round"
+        ></button>
+      </li>
     </ul>
   </nav>
 </header>
@@ -78,7 +88,6 @@
   </div>
 </section> -->
 
-
 <div class="container">
   <div class="card">
     <div class="product__cards">
@@ -89,5 +98,3 @@
     </div>
   </div>
 </div>
-
-

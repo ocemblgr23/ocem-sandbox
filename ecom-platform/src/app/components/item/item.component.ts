@@ -12,7 +12,7 @@ export class ItemComponent implements OnInit {
   defaultQuantity = 1;
 
   ngOnInit(): void {
-    console.log(this.item);
+    // console.log(this.item);
   }
 
   increase() {
