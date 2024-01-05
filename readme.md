@@ -60,3 +60,6 @@
 
 - [ ] File Structure
 - [ ] Padding,Margin,Background-Color, Text-Color
+- [ ] Inline , Block Class and Id
+- [ ] Position and Flexbox
+- [ ] Tailwind and Fullpage website with mobile view
