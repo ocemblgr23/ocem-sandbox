@@ -88,15 +88,15 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
     const RozarpayOptions = {
       description: 'Sample Razorpay demo',
       currency: 'INR',
-      amount: 100000,
+      amount: 500000,
       name: 'OCEM',
-      key: 'rzp_test_Py8sTlocaVBq1z',
+      key: 'rzp_test_ZOIv5LiKIQOK50',
       image:
         'https://img.freepik.com/free-vector/digital-comany-logo-template_1071-11.jpg?w=1480&t=st=1704427303~exp=1704427903~hmac=ceb84367aaa0dcf5e89e372c8bde1f819813004548fb375f98044f00fc555197',
       prefill: {
-        name: 'sai kumar',
-        email: 'sai@gmail.com',
-        phone: '9898989898',
+        name: 'Dave Gray',
+        email: 'davegray@gmail.com',
+        phone: '7809120630',
       },
       theme: {
         color: '#6466e3',

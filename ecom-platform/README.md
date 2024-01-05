@@ -22,3 +22,5 @@ International Mastercard Credit Card 5104 0155 5555 5558 Random CVV Any future d
 <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 
 declare var Razorpay: any;
+
+`https://razorpay.com/docs/payments/magic-checkout/web/`

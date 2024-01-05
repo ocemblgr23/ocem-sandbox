@@ -1,0 +1,7 @@
+@base_url = http://localhost:3002
+
+## Health check
+GET {{base_url}}
+
+## createOrder
+POST {{base_url}}
