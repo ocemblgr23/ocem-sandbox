@@ -63,3 +63,9 @@
 - [ ] Inline , Block Class and Id
 - [ ] Position and Flexbox
 - [ ] Tailwind and Fullpage website with mobile view
+
+##### Mintlify Doc Writer for Python, JavaScript, TypeScript, C++, PHP, Java, C#, Ruby & more
+
+`https://marketplace.visualstudio.com/items?itemName=mintlify.document` <br>
+
+- [x] `Command + .` generate document of a method
