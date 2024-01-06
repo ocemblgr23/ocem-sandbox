@@ -65,7 +65,13 @@ a {
 
 .image__gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: repeat(3, 1fr); */
+
+  /* The CSS property `grid-template-columns` is used to define the number and size of columns in a
+  grid layout. In this case, `repeat(auto-fit, minmax(200px, 1fr))` is being used as the value.
+  for responsive grid */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
   max-width: 50rem;
   margin-inline: auto;
 
