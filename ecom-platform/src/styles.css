@@ -50,3 +50,10 @@ picture {
   width: min(80%, 100% - 2rem);
   margin-inline: auto;
 }
+
+header {
+  position: sticky;
+  top: 0;
+  background: #ccc;
+  z-index: 201;
+}
