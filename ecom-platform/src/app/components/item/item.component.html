@@ -4,12 +4,22 @@
       <img alt="Card" [src]="item.image" />
     </div>
   </ng-template>
-  <p>
+  <div [ngClass]="{ limitTextHeight: isReadMore }">
     {{ item.description }}
-  </p>
+  </div>
+  <div class="card mt-2 flex justify-content-center">
+    <p-button
+      [label]="isReadMore ? 'Read More' : 'Read Less'"
+      (click)="showText()"
+      [text]="true"
+      severity="info"
+    ></p-button>
+  </div>
+  <br />
+  <br />
+
   <ng-template pTemplate="footer">
     <div class="flex gap-4 align-items-center justify-content-center py-4">
-      <!-- <p-button label="Save" icon="pi pi-check"></p-button> -->
       <p-button
         label="Buy"
         icon="pi pi-cart-plus"

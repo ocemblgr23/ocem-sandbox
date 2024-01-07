@@ -1,0 +1,35 @@
+<div class="lg:px-8 md:px-6 px-4 py-8 surface-ground ng-star-inserted">
+  <div class="surface-ground">
+    <div class="grid">
+      <!-- Grid Start -->
+      <!-- Iterate the productItems -->
+
+      <div
+        *ngFor="let item of productItems"
+        class="col-12 md:col-6 xl:col-3 p-3"
+      >
+        <p-card [header]="item.title" [subheader]="item.category">
+          <ng-template pTemplate="header">
+            <div class="product__img">
+              <img alt="Card" [src]="item.image" />
+            </div>
+          </ng-template>
+
+          <ng-template pTemplate="footer">
+            <div
+              class="flex gap-4 align-items-center justify-content-center py-4"
+            >
+              <p-button
+                label="Buy Now"
+                [text]="true"
+                icon="pi pi-cart-plus"
+              ></p-button>
+              <!-- <p-button label="Cart" icon="pi pi-check"></p-button> -->
+            </div>
+          </ng-template>
+        </p-card>
+      </div>
+      <!-- Grid End -->
+    </div>
+  </div>
+</div>

@@ -9,6 +9,8 @@ import { IProduct } from 'src/app/models/product.model';
 export class ItemComponent implements OnInit {
   @Input('product') item!: IProduct;
 
+  isReadMore = true;
+
   defaultQuantity = 1;
 
   ngOnInit(): void {
@@ -25,5 +27,9 @@ export class ItemComponent implements OnInit {
       return;
     }
     this.defaultQuantity -= 1;
+  }
+
+  showText() {
+    this.isReadMore = !this.isReadMore;
   }
 }

@@ -7,8 +7,9 @@ import { PrimeconfigModule } from './primeconfig/primeconfig.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ItemComponent } from './components/item/item.component';
+import { ProductLayoutComponent } from './components/product-layout/product-layout.component';
 @NgModule({
-  declarations: [AppComponent, ItemComponent],
+  declarations: [AppComponent, ItemComponent, ProductLayoutComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
