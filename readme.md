@@ -142,3 +142,8 @@ a {
 #### How To Make Responsive Navbar with Bootstrap 5 | Step by Step Tutorial
 
 `https://www.youtube.com/watch?v=zOtxP7ahi4M`
+
+### CSS Layout Techniques for Building Modern Web Applications - YouTube Video
+
+Conquering Responsive Layouts <br>
+`https://courses.kevinpowell.co/view/courses/conquering-responsive-layouts/256691-day-5-practice-time/703097-challenge-2-solution`
