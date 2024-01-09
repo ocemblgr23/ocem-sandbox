@@ -147,3 +147,9 @@ a {
 
 Conquering Responsive Layouts <br>
 `https://courses.kevinpowell.co/view/courses/conquering-responsive-layouts/256691-day-5-practice-time/703097-challenge-2-solution`
+
+### Logo maker https://app.logo.com/editor/icons
+
+### Traversy js challenge to study
+
+`https://github.com/bradtraversy/traversy-js-challenges/tree/main/04-recursion/07-array-sum`
