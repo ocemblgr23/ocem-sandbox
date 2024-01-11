@@ -9,3 +9,7 @@ body {
     backdrop-filter: blur(0.5rem);
   }
 }
+
+button {
+  border-radius: 0.5rem !important;
+}
