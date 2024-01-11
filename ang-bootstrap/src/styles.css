@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+*,*::after,*::before {
+  box-sizing: border-box;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  height: 100dvh;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
