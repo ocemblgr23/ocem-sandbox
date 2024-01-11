@@ -153,3 +153,8 @@ Conquering Responsive Layouts <br>
 ### Traversy js challenge to study
 
 `https://github.com/bradtraversy/traversy-js-challenges/tree/main/04-recursion/07-array-sum`
+
+
+### Angular Basics: Creating Dynamic Forms Using FormArray in Angular
+`https://www.telerik.com/blogs/angular-basics-creating-dynamic-forms-using-formarray-angular`
+
