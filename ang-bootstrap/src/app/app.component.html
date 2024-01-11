@@ -79,7 +79,6 @@
             <li class="nav-item mx-2">
               <a class="nav-link" href="#">Pay Now</a>
             </li>
-
           </ul>
           <form class="d-flex" role="search">
             <input
@@ -88,9 +87,7 @@
               placeholder="Search"
               aria-label="Search"
             />
-            <button class="btn btn-success" type="submit">
-              Search
-            </button>
+            <button class="btn btn-success" type="submit">Search</button>
           </form>
         </div>
       </div>
@@ -109,30 +106,39 @@
   </div>
 </section>
 
-<section class="h-100 bg-info text-light p-5 rounded-1 d-flex h-100 align-items-center justify-content-center" id="hello">
-<h1 class="display-1 fw-bold ">Hello World App</h1>
+<section
+  class="h-100 bg-info text-light p-5 rounded-1 d-flex h-100 align-items-center justify-content-center"
+  id="hello"
+>
+  <h1 class="display-1 fw-bold">Hello World App</h1>
 </section>
 
-<section class="h-100 bg-light   text-dark  p-5 rounded-1 d-flex h-100 align-items-center justify-content-center">
-  <div class="d-flex align-items-center gap-4   justify-content-center flex-grow-1 ">
-    <div class="spinner-border" role="status" >
-      <span class="sr-only fs-1 " id="loading"></span>
+<section
+  class="h-100 bg-light text-dark p-5 rounded-1 d-flex h-100 align-items-center justify-content-center"
+>
+  <div
+    class="d-flex align-items-center gap-4 justify-content-center flex-grow-1"
+  >
+    <div class="spinner-border" role="status">
+      <span class="sr-only fs-1" id="loading"></span>
     </div>
     <i class="pi pi-check fs-1"></i>
-    <p-button label="Check" class="rounded-1 " icon="pi pi-check"></p-button>
+    <p-button label="Check" class="rounded-1" icon="pi pi-check"></p-button>
     <p-card header="Title">
       <p class="m-0">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque
-          quas!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed
+        consequuntur error repudiandae numquam deserunt quisquam repellat libero
+        asperiores earum nam nobis, culpa ratione quam perferendis esse,
+        cupiditate neque quas!
       </p>
-  </p-card>
-  <span class="p-input-icon-right">
-    <i class="pi pi-spin pi-spinner"></i>
-    <input type="text" pInputText [(ngModel)]="value2" />
-</span>
+    </p-card>
+    <span class="p-input-icon-right">
+      <i class="pi pi-spin pi-spinner"></i>
+      <input type="text" pInputText [(ngModel)]="value2" />
+    </span>
   </div>
   <form [formGroup]="formGroup">
     <p-knob formControlName="value"></p-knob>
     <p-password [(ngModel)]="value"></p-password>
-</form>
+  </form>
 </section>
