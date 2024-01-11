@@ -3,8 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ButtonModule } from 'primeng/button';
-import { CardModule } from 'primeng/card';
+
+import { HttpClientModule } from  '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PrimeSetupModule } from './prime-setup/prime-setup.module';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -13,8 +16,10 @@ import { CardModule } from 'primeng/card';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    ButtonModule,
-    CardModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    PrimeSetupModule
   ],
   providers: [],
   bootstrap: [AppComponent]
