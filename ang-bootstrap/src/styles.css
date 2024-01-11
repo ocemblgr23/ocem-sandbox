@@ -13,9 +13,12 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
   line-height: 1.5;
   height: 100dvh;
+  background-color: #111;
+  color: #fff;
+
+
 }
 
 a {
@@ -24,4 +27,12 @@ a {
 
 ul {
   list-style: none;
+}
+
+
+@media (max-width: 991px) {
+  .sidebar {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(0.5rem);
+  }
 }
