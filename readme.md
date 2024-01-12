@@ -162,3 +162,11 @@ Conquering Responsive Layouts <br>
 
 `https://lucide.dev/guide/packages/lucide-react` <br>
 `https://lucide.dev/icons/`
+
+### How to Consume REST APIs in React – a Beginner's Guide
+
+`https://www.freecodecamp.org/news/how-to-consume-rest-apis-in-react/`
+
+### Why API is Called Twice in React? (Reactjs)
+
+`https://xerosource.com/why-api-is-called-twice-in-react/`
