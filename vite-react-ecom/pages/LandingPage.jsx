@@ -83,10 +83,6 @@ export default function LandingPage() {
                 ) : (
                   <Prime.ProgressSpinner />
                 )}
-
-                {/* {products.map((p, index) => {
-                  return <ProductItem key={index} singleProduct={p} />;
-                })} */}
               </div>
             </div>
           </div>
