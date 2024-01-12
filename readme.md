@@ -154,7 +154,11 @@ Conquering Responsive Layouts <br>
 
 `https://github.com/bradtraversy/traversy-js-challenges/tree/main/04-recursion/07-array-sum`
 
-
 ### Angular Basics: Creating Dynamic Forms Using FormArray in Angular
+
 `https://www.telerik.com/blogs/angular-basics-creating-dynamic-forms-using-formarray-angular`
 
+### Lucide React
+
+`https://lucide.dev/guide/packages/lucide-react` <br>
+`https://lucide.dev/icons/`
