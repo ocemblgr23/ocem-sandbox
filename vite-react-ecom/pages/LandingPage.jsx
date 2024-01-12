@@ -51,7 +51,7 @@ export default function LandingPage() {
         {/* <h1 className='py-2 text-center'>Products Showcase</h1> */}
         {/* Product Grid */}
         <div className='grid'>
-          <div className='col-12 md:col-3 lg:col-3'>
+          {/* <div className='col-12 md:col-3 lg:col-3'>
             <div className='text-center p-3 border-round-sm font-bold'>
               <div className='flex flex-column  gap-5 '>
                 {categories.length > 0 ? (
@@ -59,17 +59,34 @@ export default function LandingPage() {
                     return <Prime.Chip key={index} label={cat} />;
                   })
                 ) : (
-                  <p className='text-center text-2xl py-4'>Please wait....</p>
+                  <Prime.ProgressSpinner />
                 )}
               </div>
             </div>
-          </div>
-          <div className='col-12 md:col-9 lg:col-9'>
-            <div className='text-center p-3 border-round-sm font-bold'>
-              <div className='flex gap-2 flex-wrap'>
-                {products.map((p, index) => {
+          </div> */}
+          <div className='col-12 md:col-12 lg:col-12'>
+            <div className='p-3 border-round-sm font-bold'>
+              <div className='flex justify-content-center  gap-5 py-4'>
+                {categories.length > 0 ? (
+                  categories.map((cat, index) => {
+                    return <Prime.Chip key={index} label={cat} />;
+                  })
+                ) : (
+                  <h1 className='text-primary'>Loading....</h1>
+                )}
+              </div>
+              <div className='flex gap-2   justify-content-center  flex-wrap'>
+                {products.length > 0 ? (
+                  products.map((p, index) => {
+                    return <ProductItem key={index} singleProduct={p} />;
+                  })
+                ) : (
+                  <Prime.ProgressSpinner />
+                )}
+
+                {/* {products.map((p, index) => {
                   return <ProductItem key={index} singleProduct={p} />;
-                })}
+                })} */}
               </div>
             </div>
           </div>
