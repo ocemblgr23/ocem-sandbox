@@ -68,7 +68,7 @@ h3 {
 }
 
 .wrapper {
-  width: min(50rem, 100% - 2rem);
+  width: min(90%, 100% - 2rem);
   margin-inline: auto;
 }
 
