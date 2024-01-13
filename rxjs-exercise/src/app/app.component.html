@@ -1,3 +1,38 @@
 <div class="wrapper py-2">
   <h1 class="display-1">Rxjs Exercise Angular App</h1>
 </div>
+
+<div class="container py-5">
+  <ul class="list-group">
+    <li
+      class="list-group-item d-flex justify-content-between align-items-start py-4"
+      *ngFor="let p of products$ | async; index as i"
+    >
+      <div class="row d-flex align-items-center justify-content-between">
+        <div class="col col-md-4">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">{{ p.title }}</div>
+            <div class="fw-bold badge bg-primary p-2">{{ p.category }}</div>
+            <div class="lead">
+              {{ p.description }}
+            </div>
+          </div>
+          <div class="d-flex align-items-center justify-content-between py-4">
+            <div class="fw-bold text-muted">
+              {{ p.price | currency : "INR" }}
+            </div>
+            <button class="btn btn-success">Buy</button>
+          </div>
+        </div>
+        <div class="col col-md-8">
+          <img
+            [src]="p.thumbnail"
+            class="rounded mx-auto d-block"
+            [alt]="p.brand"
+            srcset=""
+          />
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

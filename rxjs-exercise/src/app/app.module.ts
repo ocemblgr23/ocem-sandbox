@@ -5,16 +5,25 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ProductsService } from './services/products.service';
+
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ProductandserviceComponent } from './pages/productandservice/productandservice.component';
 import { LandingScreenComponent } from './components/landing-screen/landing-screen.component';
 import { ProductItemComponent } from './components/product-item/product-item.component';
+import { ProductService } from './services/product.service';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, AboutComponent, ContactComponent, ProductandserviceComponent, LandingScreenComponent, ProductItemComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    AboutComponent,
+    ContactComponent,
+    ProductandserviceComponent,
+    LandingScreenComponent,
+    ProductItemComponent,
+  ],
   imports: [
     BrowserModule,
     FormsModule,
@@ -22,7 +31,7 @@ import { ProductItemComponent } from './components/product-item/product-item.com
     HttpClientModule,
     AppRoutingModule,
   ],
-  providers: [ProductsService],
+  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
