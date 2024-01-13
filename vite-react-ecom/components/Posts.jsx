@@ -5,7 +5,7 @@ import * as Prime from '../config/PrimeConfig';
 
 const retrievePosts = async () => {
   const response = await axios.get(
-    'https://jsonplaceholder.typicode.com/posts02'
+    'https://jsonplaceholder.typicode.com/posts'
   );
   return response.data;
 };
