@@ -170,3 +170,7 @@ Conquering Responsive Layouts <br>
 ### Why API is Called Twice in React? (Reactjs)
 
 `https://xerosource.com/why-api-is-called-twice-in-react/`
+
+### Beginner's Guide to React Query
+
+`https://refine.dev/blog/react-query-guide/#article-objective`

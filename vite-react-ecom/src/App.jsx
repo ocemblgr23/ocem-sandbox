@@ -3,10 +3,12 @@ import { Camera } from 'lucide-react';
 import Icon from '../components/Icon';
 import * as Prime from '../config/PrimeConfig';
 import LandingPage from '../pages/LandingPage';
+import Posts from '../components/Posts';
 
 function App() {
   return (
     <>
+      <Posts />
       <LandingPage />
       {/* <div className='container'>
         <div className='card flex gap-4 p-4 justify-content-center'>
