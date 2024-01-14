@@ -27,13 +27,25 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="menu flex gap-2">
-          <p-button
+          <!-- <p-button
             icon="pi pi-shopping-cart"
-            styleClass="p-button-rounded p-button-help"
+            styleClass="p-button-rounded p-button-outlined p-button-help"
           ></p-button>
           <p-button
             icon="pi pi-user"
             styleClass="p-button-rounded p-button-warning"
+          ></p-button> -->
+          <p-button
+            icon="pi pi-shopping-cart"
+            [rounded]="true"
+            severity="help"
+            [outlined]="true"
+          ></p-button>
+          <p-button
+            icon="pi pi-user"
+            [rounded]="true"
+            severity="info"
+            [outlined]="true"
           ></p-button>
         </div>
       </div>
