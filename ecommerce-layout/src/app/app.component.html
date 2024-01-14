@@ -1,4 +1,42 @@
-<h1>E-Commerce App Layout</h1>
-<div class="card flex justify-content-center">
-  <p-button label="Check" icon="pi pi-check"></p-button>
-</div>
+<header>
+  <nav>
+    <div class="wrapper flex gap-4 align-items-center justify-content-between">
+      <div class="brand">
+        <img
+          src="https://primefaces.org/cdn/primeng/images/primeng-logo-dark.svg"
+          alt=""
+          srcset=""
+        />
+      </div>
+      <div class="input-search w-full">
+        <span class="p-input-icon-left w-full">
+          <i class="pi pi-spin pi-spinner"></i>
+          <input
+            type="text"
+            class="w-full"
+            placeholder="Search Amazon.in"
+            pInputText
+            [(ngModel)]="searchQuery"
+          />
+        </span>
+      </div>
+      <div class="nav-item flex align-items-center gap-2">
+        <ul class="flex gap-2 p-3 align-items-start justify-content-between">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu flex gap-2">
+          <p-button
+            icon="pi pi-shopping-cart"
+            styleClass="p-button-rounded p-button-help"
+          ></p-button>
+          <p-button
+            icon="pi pi-user"
+            styleClass="p-button-rounded p-button-warning"
+          ></p-button>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
