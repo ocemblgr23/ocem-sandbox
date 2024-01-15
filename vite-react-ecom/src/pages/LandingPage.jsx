@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import * as Prime from '../config/PrimeConfig';
+import * as Prime from '../../config/PrimeConfig';
 import axios, { CancelToken } from 'axios';
-import ProductItem from '../components/ProductItem';
+import ProductItem from '../../components/ProductItem';
 
 export default function LandingPage() {
   const [products, setProducts] = useState([]);
