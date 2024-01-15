@@ -49,7 +49,15 @@ function App() {
                   : user.name.toLowerCase().includes(query.toLowerCase())
               )
               .map((user, index) => {
-                return <li key={index}>{user.name}</li>;
+                return (
+                  <li key={index}>
+                    <div className='card'>
+                      <h1>{user.name}</h1>
+                      <p>Email: {user.email}</p>
+                      <p>Phone: {user.phone}</p>
+                    </div>
+                  </li>
+                );
               })}
           </ul>
         </div>
