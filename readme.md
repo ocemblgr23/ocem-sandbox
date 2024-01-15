@@ -174,3 +174,19 @@ Conquering Responsive Layouts <br>
 ### Beginner's Guide to React Query
 
 `https://refine.dev/blog/react-query-guide/#article-objective`
+
+### Angular & RxJS Tips #1: HttpClient & Async Pipe (Good One)
+
+@author
+Fabio Biondi - Front-End Tutorials
+
+###### (Angular & RxJS Tutorials (🇬🇧))
+
+`Angular & RxJS Tips #1: HttpClient & Async Pipe`
+
+### Error handling with Observables (Best Approach)
+
+@author
+Deborah Kurata
+`https://www.youtube.com/watch?v=L9kFTps_7Tk`
+`https://github.com/DeborahK/Angular-Posts`
