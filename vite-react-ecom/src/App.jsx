@@ -41,6 +41,12 @@ function App() {
         <Prime.ProgressSpinner />
       </div>
     );
+  if (error)
+    return (
+      <div className='text-center py-4'>
+        <p className='m-0'>An error occurred: {error.message}</p>
+      </div>
+    );
 
   const handelChange = (e) => {
     setQuery(e.target.value);
@@ -50,16 +56,17 @@ function App() {
     <>
       {/* Search and Filter */}
       <div className='container'>
-        <div className='card py-3 flex align-items-center justify-content-center '>
-          <span className=' p-float-label p-input-icon-right'>
+        <div className='card py-3 flex align-items-center w-full '>
+          <span className=' p-float-label w-full p-input-icon-right'>
             <i className='pi pi-spin pi-spinner' />
             <Prime.InputText
+              className='w-full'
               onChange={handelChange}
               placeholder='Search user'
             />
           </span>
         </div>
-        <div className='card'>
+        <div className='card flex align-items-center justify-content-center '>
           <ul>
             {users &&
               users
