@@ -4,24 +4,43 @@ import Icon from './components/Icon';
 import * as Prime from './config/PrimeConfig';
 import LandingPage from './pages/LandingPage';
 import Posts from './components/Posts';
+import { useQuery } from 'react-query';
+import axios from 'axios';
+const usersUrl = 'https://jsonplaceholder.typicode.com/users';
+
+const fetchGithubUsers = async () => {
+  const response = await axios.get(usersUrl);
+  return response.data;
+};
 
 function App() {
   const [query, setQuery] = useState('');
-  const [users, setUsers] = useState([]);
+  // const [users, setUsers] = useState([]);
 
-  const usersUrl = 'https://jsonplaceholder.typicode.com/users';
+  const {
+    data: users,
+    error,
+    isLoading,
+  } = useQuery('usersInfo', fetchGithubUsers);
 
   // Api call
 
-  useEffect(() => {
-    const fetchUsers = async () => {
-      const resp = await fetch(usersUrl);
-      const data = await resp.json();
-      setUsers(data);
-    };
+  // useEffect(() => {
+  //   const fetchUsers = async () => {
+  //     const resp = await fetch(usersUrl);
+  //     const data = await resp.json();
+  //     setUsers(data);
+  //   };
 
-    fetchUsers();
-  }, []);
+  //   fetchUsers();
+  // }, []);
+
+  if (isLoading)
+    return (
+      <div className='flex align-items-center justify-content-center py-4 '>
+        <Prime.ProgressSpinner />
+      </div>
+    );
 
   const handelChange = (e) => {
     setQuery(e.target.value);
@@ -42,23 +61,24 @@ function App() {
         </div>
         <div className='card'>
           <ul>
-            {users
-              .filter((user) =>
-                query.toLowerCase() === ''
-                  ? user
-                  : user.name.toLowerCase().includes(query.toLowerCase())
-              )
-              .map((user, index) => {
-                return (
-                  <li key={index}>
-                    <div className='card'>
-                      <h1>{user.name}</h1>
-                      <p>Email: {user.email}</p>
-                      <p>Phone: {user.phone}</p>
-                    </div>
-                  </li>
-                );
-              })}
+            {users &&
+              users
+                .filter((user) =>
+                  query.toLowerCase() === ''
+                    ? user
+                    : user.name.toLowerCase().includes(query.toLowerCase())
+                )
+                .map((user, index) => {
+                  return (
+                    <li key={index}>
+                      <div className='card'>
+                        <h1>{user.name}</h1>
+                        <p>Email: {user.email}</p>
+                        <p>Phone: {user.phone}</p>
+                      </div>
+                    </li>
+                  );
+                })}
           </ul>
         </div>
       </div>
