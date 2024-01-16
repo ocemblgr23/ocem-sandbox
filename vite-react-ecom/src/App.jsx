@@ -58,7 +58,9 @@ function App() {
       <div className='container'>
         <div className='card py-3 flex align-items-center w-full '>
           <span className=' p-float-label w-full p-input-icon-right'>
-            <i className='pi pi-spin pi-spinner' />
+            <i
+              className={isLoading ? 'pi pi-spin pi-spinner' : 'pi pi-check'}
+            />
             <Prime.InputText
               className='w-full'
               onChange={handelChange}
