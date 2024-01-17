@@ -7,9 +7,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PrimeModule } from './config/prime/prime.module';
+import { UsersComponent } from './pages/users/users.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, UsersComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

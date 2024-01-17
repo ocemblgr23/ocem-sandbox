@@ -1,0 +1,12 @@
+<div class="card flex align-items-center justify-content-center">
+  <div *ngIf="users$ | async as users">
+    <h1>Total Users: {{ users.length }}</h1>
+    <div class="card">
+      <ul>
+        <li *ngFor="let user of users" class="py-1 text-primary">
+          {{ user.name }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
