@@ -7,7 +7,7 @@
       [paginator]="true"
       [rows]="5"
       [showCurrentPageReport]="true"
-      currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+      currentPageReportTemplate="Showing {first} to {last} of {totalRecords} products"
       [rowsPerPageOptions]="[5, 10, 25, 50]"
       [tableStyle]="{ 'min-width': '60rem' }"
     >
@@ -27,16 +27,19 @@
           <td>
             <!-- Optmize -->
             <article
-              class="flex flex-column md:flex-row w-full gap-3 p-3 border-round border-1 surface-border mb-3 ng-star-inserted"
+              class="flex flex-column md:flex-row w-full gap-3 p-3 border-round border-1 surface-border mb-3 shadow-2"
             >
               <div class="relative">
-                <img
-                  alt="Image"
-                  class="border-round w-full h-full md:w-14rem md:h-14rem"
-                  [src]="product.image"
-                />
+                <div class="image-wrapper">
+                  <!-- class="border-round w-full h-full md:w-14rem md:h-14rem" -->
+                  <img
+                    [alt]="product.title"
+                    class="border-round w-full h-full md:w-14rem md:h-14rem"
+                    [src]="product.image"
+                  />
+                </div>
                 <p
-                  class="absolute px-2 py-1 border-round-lg text-sm font-normal text-white mt-0 mb-0"
+                  class="absolute px-2 py-1 border-round-lg text-sm font-normal text-800 mt-0 mb-0"
                   style="
                     background-color: rgba(255, 255, 255, 0.3);
                     backdrop-filter: blur(10px);
@@ -44,7 +47,7 @@
                     left: 3%;
                   "
                 >
-                  Superhost
+                  {{ product.category }}
                 </p>
               </div>
               <div class="flex flex-column w-full gap-3">

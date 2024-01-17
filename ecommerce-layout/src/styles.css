@@ -115,3 +115,12 @@ textarea,
 select {
   font: inherit;
 }
+
+/* Modify table :default style */
+.p-datatable .p-datatable-tbody > tr > td {
+  text-align: left;
+
+  border-width: 0 0 1px 0;
+  padding: 1rem 1rem;
+  border: none;
+}
