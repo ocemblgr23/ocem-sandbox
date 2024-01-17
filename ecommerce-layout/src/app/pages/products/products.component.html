@@ -1,0 +1,113 @@
+<div class="card">
+  <div *ngIf="products$ | async as products">
+    <h1>Total products: {{ products.length }}</h1>
+    <!-- products table  -->
+    <p-table
+      [value]="products"
+      [paginator]="true"
+      [rows]="5"
+      [showCurrentPageReport]="true"
+      currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+      [rowsPerPageOptions]="[5, 10, 25, 50]"
+      [tableStyle]="{ 'min-width': '60rem' }"
+    >
+      <ng-template pTemplate="caption">
+        <div class="flex align-items-center justify-content-between">
+          Products
+          <p-button icon="pi pi-refresh"></p-button>
+        </div>
+      </ng-template>
+      <ng-template pTemplate="header">
+        <tr>
+          <th>title</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-product>
+        <tr>
+          <td>
+            <!-- Optmize -->
+            <article
+              class="flex flex-column md:flex-row w-full gap-3 p-3 border-round border-1 surface-border mb-3 ng-star-inserted"
+            >
+              <div class="relative">
+                <img
+                  alt="Image"
+                  class="border-round w-full h-full md:w-14rem md:h-14rem"
+                  [src]="product.image"
+                />
+                <p
+                  class="absolute px-2 py-1 border-round-lg text-sm font-normal text-white mt-0 mb-0"
+                  style="
+                    background-color: rgba(255, 255, 255, 0.3);
+                    backdrop-filter: blur(10px);
+                    top: 3%;
+                    left: 3%;
+                  "
+                >
+                  Superhost
+                </p>
+              </div>
+              <div class="flex flex-column w-full gap-3">
+                <div
+                  class="flex w-full justify-content-between align-items-center"
+                >
+                  <p class="font-semibold text-lg mt-0 mb-0 mr-3">
+                    {{ product.title }}
+                  </p>
+                  <p-rating
+                    [(ngModel)]="product.rating.rate"
+                    [readonly]="true"
+                    [cancel]="false"
+                  ></p-rating>
+                </div>
+                <p class="font-normal text-lg text-600 mt-0 mb-0">
+                  {{ product.category }}
+                </p>
+                <div
+                  class="flex flex-column md:flex-row flex-wrap md:justify-content-between mt-auto"
+                >
+                  <div class="flex gap-3">
+                    <p
+                      class="text-base flex align-items-center text-900 mt-0 mb-1"
+                    >
+                      <i class="pi pi-users mr-2"></i
+                      ><span class="font-medium">2 Guests</span>
+                    </p>
+                    <p
+                      class="text-base flex align-items-center text-900 mt-0 mb-1"
+                    >
+                      <i class="pi pi-wifi mr-2"></i
+                      ><span class="font-medium">1 Gigabit</span>
+                    </p>
+                    <p
+                      class="text-base flex align-items-center text-900 mt-0 mb-1"
+                    >
+                      <i class="pi pi-check-circle mr-2"></i
+                      ><span class="font-medium">Verified</span>
+                    </p>
+                  </div>
+                  <div class="flex align-items-center">
+                    <p class="font-semibold text-4xl text-900 mt-0 mb-0">
+                      {{ product.price | currency : "INR" }}
+                    </p>
+                    <i class="pi pi-circle-fill text-xs text-700 mx-2"></i>
+                    <p class="flex align-items-center w-full text-lg text-700">
+                      9 nights
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <!-- Optmize -->
+          </td>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="summary">
+        <div class="flex align-items-center justify-content-between">
+          In total there are {{ products ? products.length : 0 }} products.
+        </div>
+      </ng-template>
+    </p-table>
+    <!-- products table -->
+  </div>
+</div>

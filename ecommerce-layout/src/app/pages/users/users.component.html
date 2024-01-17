@@ -4,7 +4,12 @@
     <div class="card">
       <ul>
         <li *ngFor="let user of users" class="py-1 text-primary">
-          {{ user.name }}
+          <div class="flex flex-column">
+            {{ user.name }}
+            <span class="text-500 my-2">Email: {{ user.email }}</span>
+            <span class="text-500 mb-2">Phone: {{ user.phone }}</span>
+            <span class="text-800">Website: {{ user.website }}</span>
+          </div>
         </li>
       </ul>
     </div>

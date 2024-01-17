@@ -8,9 +8,10 @@ import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PrimeModule } from './config/prime/prime.module';
 import { UsersComponent } from './pages/users/users.component';
+import { ProductsComponent } from './pages/products/products.component';
 
 @NgModule({
-  declarations: [AppComponent, UsersComponent],
+  declarations: [AppComponent, UsersComponent, ProductsComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
