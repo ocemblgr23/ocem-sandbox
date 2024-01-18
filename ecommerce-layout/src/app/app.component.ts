@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
-import { delay, fromEvent, map, mergeMap } from 'rxjs';
+import { delay, fromEvent, map, mergeMap, tap } from 'rxjs';
 import { usersUrl } from './common';
 import { Button } from 'primeng/button';
 
@@ -26,6 +26,7 @@ export class AppComponent implements AfterViewInit {
     this.http
       .get<IPost>(`${API}/posts/66`)
       .pipe(
+        tap((data) => console.log(data)),
         mergeMap((post) =>
           this.http
             .get<IUser[]>(`${API}/users?id=${post.userId}`)
