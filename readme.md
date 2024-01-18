@@ -208,3 +208,30 @@ node_modules/primeng/resources/primeng.min.css
 ```
 
 `https://github.com/yigitfindikli/primeng-colors-example`
+
+### 50projects50days
+
+@author Brad Traversy
+
+`https://github.com/bradtraversy/50projects50days`
+
+##### button styling
+
+```css
+.btn {
+  background-color: rebeccapurple;
+  color: #fff;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  width: 49.5%;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn:focus {
+  outline: none;
+}
+```
