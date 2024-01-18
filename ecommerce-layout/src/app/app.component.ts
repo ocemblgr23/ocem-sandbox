@@ -1,8 +1,10 @@
 import { HttpClient } from '@angular/common/http';
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
-import { fromEvent, map, mergeMap } from 'rxjs';
+import { delay, fromEvent, map, mergeMap } from 'rxjs';
 import { usersUrl } from './common';
 import { Button } from 'primeng/button';
+
+export const API = 'https://jsonplaceholder.typicode.com';
 
 @Component({
   selector: 'app-root',
@@ -19,6 +21,21 @@ export class AppComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
     console.log('View Init');
+
+    // nested api call
+    this.http
+      .get<IPost>(`${API}/posts/66`)
+      .pipe(
+        mergeMap((post) =>
+          this.http
+            .get<IUser[]>(`${API}/users?id=${post.userId}`)
+            .pipe(delay(2000))
+        )
+      )
+      .subscribe((resp) => {
+        console.log(resp);
+      });
+
     fromEvent(this.btn.nativeElement, 'click')
       .pipe(
         mergeMap(() =>
@@ -29,4 +46,41 @@ export class AppComponent implements AfterViewInit {
         console.log(resp);
       });
   }
+}
+
+interface IPost {
+  userId: number;
+  id: number;
+  title: string;
+  body: string;
+}
+
+interface IUser {
+  id: number;
+  name: string;
+  username: string;
+  email: string;
+  address: Address;
+  phone: string;
+  website: string;
+  company: Company;
+}
+
+interface Company {
+  name: string;
+  catchPhrase: string;
+  bs: string;
+}
+
+interface Address {
+  street: string;
+  suite: string;
+  city: string;
+  zipcode: string;
+  geo: Geo;
+}
+
+interface Geo {
+  lat: string;
+  lng: string;
 }
