@@ -190,3 +190,21 @@ Fabio Biondi - Front-End Tutorials
 Deborah Kurata
 `https://www.youtube.com/watch?v=L9kFTps_7Tk`
 `https://github.com/DeborahK/Angular-Posts`
+
+### Primeng Colors and theme setup
+
+- [x] Theming with PrimeNG CSS Variables
+
+`https://dev.to/yigitfindikli/theming-with-primeng-css-variables-5ai2`
+
+`npm install primeng primeicons primeflex`
+
+- [x] We need to import PrimeNG's CSS dependencies to Angular.json.
+
+```json
+node_modules/primeicons/primeicons.css
+node_modules/primeng/resources/themes/saga-blue/theme.css
+node_modules/primeng/resources/primeng.min.css
+```
+
+`https://github.com/yigitfindikli/primeng-colors-example`
