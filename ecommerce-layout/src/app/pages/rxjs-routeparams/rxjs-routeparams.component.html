@@ -35,7 +35,7 @@
     </div>
     <ul class="py-2">
       <ng-container *ngIf="userItems$ | async as users">
-        <li *ngIf="users.length <= 0">No Users Found</li>
+        <li *ngIf="users.length == 0">No Users Found</li>
         <li *ngFor="let user of users">{{ user.name }}</li>
       </ng-container>
     </ul>
