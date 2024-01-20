@@ -1,10 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { delay, fromEvent, map, mergeMap, tap } from 'rxjs';
-import { usersUrl } from './common';
+import { API, usersUrl } from './common';
 import { Button } from 'primeng/button';
-
-export const API = 'https://jsonplaceholder.typicode.com';
 
 @Component({
   selector: 'app-root',

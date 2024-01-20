@@ -1,0 +1,43 @@
+<div class="card">
+  <ng-container *ngIf="user$ | async as user">
+    <h1>
+      {{ user.name }}
+    </h1>
+    <h3>
+      {{ user.email }}
+    </h3>
+  </ng-container>
+
+  <ul class="flex gap-2">
+    <li>
+      <button routerLink="/users/1" class="btn">1</button>
+    </li>
+    <li>
+      <button routerLink="/users/2" class="btn">2</button>
+    </li>
+    <li>
+      <button routerLink="/users/3" class="btn">3</button>
+    </li>
+  </ul>
+  <div class="card py-4">
+    <h1>Live Search Users</h1>
+    <div class="input-search w-full">
+      <span class="p-input-icon-left w-full">
+        <i class="pi pi-spin pi-spinner"></i>
+        <input
+          type="text"
+          class="w-full"
+          placeholder="Search json placeholder"
+          pInputText
+          [formControl]="input"
+        />
+      </span>
+    </div>
+    <ul class="py-2">
+      <ng-container *ngIf="userItems$ | async as users">
+        <li *ngIf="users.length <= 0">No Users Found</li>
+        <li *ngFor="let user of users">{{ user.name }}</li>
+      </ng-container>
+    </ul>
+  </div>
+</div>

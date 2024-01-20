@@ -9,9 +9,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PrimeModule } from './config/prime/prime.module';
 import { UsersComponent } from './pages/users/users.component';
 import { ProductsComponent } from './pages/products/products.component';
+import { RxjsRouteparamsComponent } from './pages/rxjs-routeparams/rxjs-routeparams.component';
 
 @NgModule({
-  declarations: [AppComponent, UsersComponent, ProductsComponent],
+  declarations: [AppComponent, UsersComponent, ProductsComponent, RxjsRouteparamsComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
